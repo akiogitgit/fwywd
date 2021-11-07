@@ -8,6 +8,25 @@ import { SlideInLeft } from '../components/SlideInLeft';
 import { SlideInRight } from '../components/SlideInRight';
 import { FadeInHigh } from '../components/FadeInHigh';
 
+import author from "../public/hero.png"
+import logo from "../public/logo.png"
+import hero from "../public/hero.png"
+import bg_about from "../public/bg-about.png"
+import about_1 from "../public/about-1.png"
+import about_2 from "../public/about-2.png"
+import about_3 from "../public/about-3.png"
+import bg_skills from "../public/bg-skills.png"
+import skill from "../public/skill.png"
+import value1 from "../public/value1.png"
+import value2 from "../public/value2.png"
+import value3 from "../public/value3.png"
+import bg_future from "../public/bg-future.png"
+import future from "../public/future.png"
+import logo_white from "../public/logo_white.png"
+import twitter from "../public/twitter.png"
+import facebook from "../public/facebook.png"
+
+
 export default function Home() {
   const [showHeader, setShowHeader] = useState(true);
 
@@ -25,15 +44,15 @@ export default function Home() {
 
       <header className={`fixed top-0 z-10 bg-white bg-opacity-75 w-full flex justify-between duration-300
         ${showHeader ? "" : "translate-y-[-100%]"}`}>
-        <a href="#top" className="h-[80px] overflow-hidden">
-          <Image className="translate-y-[-10px]" height={100} width={200} objectFit="contain" loading="eager" src="/logo.png" alt="logo" />
+        <a href="#top" className="h-[80px] w-[200px] z-20 scale-[100%]">
+          <Image className="translate-y-[-5px]" src={logo} loading="eager" placeholder="blur" alt="logo" />
         </a>
         <div className="flex gap-[30px] mr-[20px] mt-[30px] text-[18px] font-bold text-[#008c8d]">
           <a href="#about" className="nub-hover">ABOUT
             <p className="w-0 h-[1px] bg-[#008c8d] duration-300"></p>
           </a>
           <a href="#skills" className="nub-hover">SKILLS
-            <p className="w-0 h-[1px] bg-[#008c8d] duration-300"></p>
+            <p className="w-0 h-[1px] bg-[#abc2c2] duration-300"></p>
           </a>
           <a href="#values" className="nub-hover">VALUES
             <p className="w-0 h-[1px] bg-[#008c8d] duration-300"></p>
@@ -50,7 +69,7 @@ export default function Home() {
           `}</style>
       </header>
 
-      <main id="top" className="pt-[100px]">
+      <main id="top" className="pt-[80px]">
         <section className="bg-[#6bc2c3] flex justify-between pt-[38px] pb-[27px] px-[60px]">
           <div className="flex items-center ml-[70px] text-white">
             <div className="text-[100px] font-black tracking-widest leading-[65px]">
@@ -67,7 +86,7 @@ export default function Home() {
             </div>
           </div>
           <SlideInRight>
-            <Image height="540px" width="600px" objectFit="contain" loading="eager" src="/hero.png" alt="hero" />
+            <Image src={hero} objectFit="contain" placeholder="blur" loading="eager" alt="hero" />
           </SlideInRight>
         </section>
         {/* <Image className="absolute top-[0px] z-[-1]" height="1000" width="1440" src="/bg-about.png" /> */}
@@ -75,7 +94,7 @@ export default function Home() {
 
         <section id="about" className="relative grid place-items-center">
           <div className="absolute top-[-30px] z-[-1]">
-            <Image height="760" width="1440" objectFit="contain" loading="eager" src="/bg-about.png" />
+            <Image src={bg_about} objectFit="contain" placeholder="blur" loading="eager" />
           </div>
           <FadeIn>
             <h3 className="pt-[50px] text-[30px] font-black tracking-wider">
@@ -89,7 +108,7 @@ export default function Home() {
           <div className="flex gap-[60px] py-[40px]">
             <FadeIn>
               <div className="flex flex-col text-center w-[300px]">
-                <Image height="170" width="300" objectFit="contain" loading="eager" src="/about-1.png" alt="about-1" />
+                <Image src={about_1} objectFit="contain" placeholder="blur" loading="eager" alt="about-1" />
                 <h4 className="text-[#008c8d] text-[25px] font-bold py-[20px]">趣味</h4>
                 <p>趣味は筋トレです。ここ数か月筋トレを週６で行っており、一回の時間が１時間程度行っています。</p>
               </div>
@@ -97,7 +116,7 @@ export default function Home() {
 
             <FadeIn>
               <div className="flex flex-col text-center w-[300px]">
-                <Image height="170" width="300" objectFit="contain" loading="eager" src="/about-2.png" alt="about-1" />
+                <Image src={about_2} objectFit="contain" placeholder="blur" loading="eager" alt="about-1" />
                 <h4 className="text-[#008c8d] text-[25px] font-bold py-[20px]">好きな食べ物</h4>
                 <p>好きな食べ物は鶏肉です。鶏肉の中でもタンパク質の量が多い、ささみ、鶏むね肉が好きです。</p>
               </div>
@@ -105,7 +124,7 @@ export default function Home() {
 
             <FadeIn>
               <div className="flex flex-col text-center w-[300px]">
-                <Image height="170" width="300" objectFit="contain" loading="eager" src="/about-3.png" alt="about-1" />
+                <Image src={about_3} objectFit="contain" placeholder="blur" loading="eager" alt="about-1" />
                 <h4 className="text-[#008c8d] text-[25px] font-bold py-[20px]">性格</h4>
                 <p>継続力があり、集中力が高いです。一度自分で決めたことは、必ずやり通します。
                 </p>
@@ -114,14 +133,15 @@ export default function Home() {
           </div>
         </section>
 
+
         <section id="skills" className="relative">
           <div className="absolute top-[0px] z-[-1]">
-            <Image height="750" width="1440" objectFit="contain" loading="eager" src="/bg-skills.png" alt="bg-skill" />
+            <Image src={bg_skills} objectFit="contain" placeholder="blur" loading="eager" alt="bg-skill" />
           </div>
           <div className="flex justify-center gap-[30px]">
             <SlideInLeft>
               <div className="mt-[165px]">
-                <Image height="370" width="550" objectFit="contain" loading="eager" src="/skill.png" alt="skill" />
+                <Image src={skill} objectFit="contain" placeholder="blur" loading="eager" alt="skill" />
               </div>
             </SlideInLeft>
 
@@ -199,7 +219,7 @@ export default function Home() {
             <div className="mt-[40px] flex text-center bg-white rounded-xl">
               <div className="my-[30px]">
                 <div className="flex flex-col w-[350px] border-r-2 border-[#c5eaea]">
-                  <Image height="200" width="200" objectFit="contain" loading="eager" src="/value1.png" />
+                  <Image src={value1} objectFit="contain" placeholder="blur" loading="eager" alt="value1" />
                   <h3 className="text-[18px] font-bold mt-[30px] mb-[15px]">
                     価値観01
                   </h3>
@@ -213,7 +233,7 @@ export default function Home() {
 
               <div className="my-[30px]">
                 <div className="flex flex-col w-[350px] border-r-2 border-[#c5eaea]">
-                  <Image height="200" width="200" objectFit="contain" loading="eager" src="/value2.png" />
+                  <Image src={value2} objectFit="contain" placeholder="blur" loading="eager" alt="value2" />
                   <h3 className="text-[18px] font-bold mt-[30px] mb-[15px]">
                     価値観02
                   </h3>
@@ -227,7 +247,7 @@ export default function Home() {
 
               <div className="my-[30px]">
                 <div className="flex flex-col w-[350px]">
-                  <Image height="200" width="200" objectFit="contain" loading="eager" src="/value3.png" />
+                  <Image src={value3} objectFit="contain" placeholder="blur" loading="eager" alt="value3" />
                   <h3 className="text-[18px] font-bold mt-[30px] mb-[15px]">
                     価値観03
                   </h3>
@@ -245,7 +265,7 @@ export default function Home() {
 
         <section id="future" className="relative pb-[50px]">
           <div className="absolute top-[-290px] z-[-1]">
-            <Image width="1440" height="700" objectFit="contain" loading="eager" src="/bg-future.png" alt="future" />
+            <Image src={bg_future} objectFit="contain" loading="eager" placeholder="blur" alt="future" />
           </div>
           <div className="flex justify-center gap-[40px]">
             <SlideInLeft>
@@ -270,7 +290,7 @@ export default function Home() {
             </SlideInLeft>
             <SlideInRight>
               <div className="mt-[70px]">
-                <Image width="500" height="260" objectFit="contain" loading="eager" src="/future.png" alt="future" />
+                <Image src={future} objectFit="contain" loading="eager" placeholder="blur" alt="future" />
               </div>
             </SlideInRight>
           </div>
@@ -288,14 +308,14 @@ export default function Home() {
           </h4>
         </FadeIn>
         <FadeIn>
-          <div className="my-[60px]">
-            <Image width="110" height="130" objectFit="contain" src="/logo_white.png" alt="logo_white" />
+          <div className="h-[300px] scale-[30%]">
+            <Image src={logo_white} objectFit="contain" loading="eager" placeholder="blur" alt="logo_white" />
           </div>
         </FadeIn>
         <FadeIn>
           <div className="flex gap-[20px]">
-            <Image className="hover:animate-pulse  duration-300" width="18" height="18" objectFit="contain" src="/twitter.png" alt="logo_white" />
-            <Image className="hover:animate-pulse" width="18" height="18" objectFit="contain" src="/facebook.png" alt="logo_white" />
+            <Image className="hover:animate-pulse duration-300" src={twitter} objectFit="contain" loading="eager" placeholder="blur" alt="logo_white" />
+            <Image className="hover:animate-pulse" src={facebook} objectFit="contain" loading="eager" placeholder="blur" alt="logo_white" />
           </div>
         </FadeIn>
         <FadeIn>
