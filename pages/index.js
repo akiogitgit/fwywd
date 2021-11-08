@@ -102,32 +102,32 @@ export default function Home() {
             </h3>
           </FadeIn>
 
-          <div className="flex flex-wrap justify-center gap-[40px] lg:gap-[60px] py-[40px]">
+          <ul className="flex flex-wrap justify-center gap-[40px] lg:gap-[60px] py-[40px]">
             <FadeIn>
-              <div className="flex flex-col text-center w-[300px]">
+              <li className="flex flex-col text-center w-[300px]">
                 <Image src={about_1} objectFit="contain" placeholder="blur" loading="eager" alt="about-1" />
                 <h4 className="text-[#008c8d] text-[25px] font-bold py-[20px]">趣味</h4>
                 <p>趣味は筋トレです。ここ数か月筋トレを週６で行っており、一回の時間が１時間程度行っています。</p>
-              </div>
+              </li>
             </FadeIn>
 
             <FadeIn>
-              <div className="flex flex-col text-center w-[300px]">
+              <li className="flex flex-col text-center w-[300px]">
                 <Image src={about_2} objectFit="contain" placeholder="blur" loading="eager" alt="about-1" />
                 <h4 className="text-[#008c8d] text-[25px] font-bold py-[20px]">好きな食べ物</h4>
                 <p>好きな食べ物は鶏肉です。鶏肉の中でもタンパク質の量が多い、ささみ、鶏むね肉が好きです。</p>
-              </div>
+              </li>
             </FadeIn>
 
             <FadeIn>
-              <div className="flex flex-col text-center w-[300px]">
+              <li className="flex flex-col text-center w-[300px]">
                 <Image src={about_3} objectFit="contain" placeholder="blur" loading="eager" alt="about-1" />
                 <h4 className="text-[#008c8d] text-[25px] font-bold py-[20px]">性格</h4>
                 <p>継続力があり、集中力が高いです。一度自分で決めたことは、必ずやり通します。
                 </p>
-              </div>
+              </li>
             </FadeIn>
-          </div>
+          </ul>
         </section>
 
 
@@ -216,9 +216,10 @@ export default function Home() {
               </span>
             </h2>
           </FadeIn>
-          <div className="mt-[40px] flex flex-col lg:flex-row text-center bg-white rounded-xl">
+
+          <ul className="mt-[40px] flex flex-col lg:flex-row text-center bg-white rounded-xl">
             <FadeIn>
-              <div className="my-[30px]">
+              <li className="my-[30px]">
                 <div className="flex flex-col w-[350px] lg:border-r-2 border-[#c5eaea]">
                   <Image src={value1} objectFit="contain" placeholder="blur" loading="eager" alt="value1" />
                   <h3 className="text-[18px] font-bold mt-[30px] mb-[15px]">
@@ -230,11 +231,11 @@ export default function Home() {
                     なので、学生の時に稼いだお金は、学生のうちにある程度使いたいと思っています。
                   </p>
                 </div>
-              </div>
+              </li>
             </FadeIn>
 
             <FadeIn>
-              <div className="my-[30px]">
+              <li className="my-[30px]">
                 <div className="flex flex-col w-[350px] lg:border-r-2 border-[#c5eaea]">
                   <Image src={value2} objectFit="contain" placeholder="blur" loading="eager" alt="value2" />
                   <h3 className="text-[18px] font-bold mt-[30px] mb-[15px]">
@@ -246,11 +247,11 @@ export default function Home() {
                     なぜなら今この瞬間の幸せよりも、今後の自分の体のほうが大事だからと思うようになったからです。
                   </p>
                 </div>
-              </div>
+              </li>
             </FadeIn>
 
             <FadeIn>
-              <div className="my-[30px]">
+              <li className="my-[30px]">
                 <div className="flex flex-col w-[350px]">
                   <Image src={value3} objectFit="contain" placeholder="blur" loading="eager" alt="value3" />
                   <h3 className="text-[18px] font-bold mt-[30px] mb-[15px]">
@@ -262,9 +263,9 @@ export default function Home() {
                     わかっていて、だからといってそれを理由に良い人になることを放棄したくないと思っています。
                   </p>
                 </div>
-              </div>
+              </li>
             </FadeIn>
-          </div>
+          </ul>
         </section>
 
 
