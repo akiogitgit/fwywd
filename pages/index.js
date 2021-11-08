@@ -157,7 +157,7 @@ export default function Home() {
                   基本情報技術者試験　Python3エンジニア認定基礎試験　C言語:半年 Python:半年 HTML、CSS、
                   JavaScript:２カ月 JavaScript(React、Next.js、Gatsby、Node) Tailwind css
                   ChakraUI Bootstrap TypeScript git Linux<br /><br />
-                  触ったことがある(jQuery、SQL、Firebase、WordPress、Photopea、illustrator、GraphQL)
+                  触ったことがある(jQuery、PHP、SQL、Firebase、WordPress、netlify cms、Photopea、illustrator、GraphQL)
                 </p>
               </SlideInRight>
 
@@ -259,8 +259,7 @@ export default function Home() {
                   </h3>
                   <p className="mx-[40px]">
                     他人のために自分が犠牲になることに価値観を感じていて、他人から褒められるために行動していることが
-                    たまにあります。自分自身あまり良い人ではないと
-                    わかっていて、だからといってそれを理由に良い人になることを放棄したくないと思っています。
+                    たまにあります。
                   </p>
                 </div>
               </li>
@@ -276,9 +275,9 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row justify-center items-center gap-[40px]">
             <SlideInLeft>
               <div className="ml-[5%] text-center w-[90%] lg:w-[510px]">
-                <h2 className="mt-[60px] text-[25px] sm:text-[30px] font-bold text-center lg:text-left tracking-widest">
+                <h2 className="flex flex-col sm:flex-row mt-[60px] text-[25px] sm:text-[30px] font-bold text-center lg:text-left tracking-widest">
                   3年後にやりたいこと
-                  <span className="ml-[20px] text-[20px] text-[#008c8d]">
+                  <span className="sm:ml-[20px] text-[20px] text-[#008c8d]">
                     FUTURE
                   </span>
                 </h2>
