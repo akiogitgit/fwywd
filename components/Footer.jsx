@@ -25,8 +25,8 @@ export const Footer = () => {
                 </FadeIn>
             </div>
             <FadeIn>
-                <div className="mb-[90px]">
-                    <Image src={logo_white} objectFit="contain" loading="eager" placeholder="blur" alt="logo_white" />
+                <div className="mb-[30px]">
+                    <Image src="/logo-white.png" width="100" height="200" objectFit="contain" loading="eager" alt="logo_white" />
                 </div>
             </FadeIn>
             <FadeIn>
