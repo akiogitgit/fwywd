@@ -41,10 +41,10 @@ export default function Home() {
 
       <header className={`fixed top-0 z-10 bg-white bg-opacity-75 w-full flex flex-col sm:flex-row sm:justify-between duration-300
         ${showHeader ? "" : "translate-y-[-100%]"}`}>
-        <a href="#top" className="m-auto sm:m-0 h-[80px] w-[200px] z-20 scale-[70%] sm:scale-[100%]">
+        <a href="#top" className="m-auto sm:m-0 h-[70px] w-[200px] translate-y-[-10px] scale-[80%] sm:scale-[100%]">
           <Image className="translate-y-[-5px]" src={logo} loading="eager" placeholder="blur" alt="logo" />
         </a>
-        <div className="flex gap-[30px] justify-center mr-[20px] sm:mt-[30px] pb-[10px] text-[15px] sm:text-[18px] font-bold text-[#008c8d]">
+        <div className="flex gap-[30px] justify-center mr-[20px] mt-[20px] sm:mt-[30px] pb-[10px] text-[15px] sm:text-[18px] font-bold text-[#008c8d]">
           <a href="#about" className="nub-hover">ABOUT
             <p className="w-0 h-[1px] bg-[#008c8d] duration-300"></p>
           </a>
