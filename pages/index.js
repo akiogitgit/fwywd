@@ -8,23 +8,20 @@ import { SlideInLeft } from '../components/SlideInLeft';
 import { SlideInRight } from '../components/SlideInRight';
 import { FadeInHigh } from '../components/FadeInHigh';
 
-import author from "../public/hero.png"
 import logo from "../public/logo.png"
 import hero from "../public/hero.png"
-import bg_about from "../public/bg-about.png"
+//import bg_about from "../public/bg-about.png"
 import about_1 from "../public/about-1.png"
 import about_2 from "../public/about-2.png"
 import about_3 from "../public/about-3.png"
-import bg_skills from "../public/bg-skills.png"
+//import bg_skills from "../public/bg-skills.png"
 import skill from "../public/skill.png"
 import value1 from "../public/value1.png"
 import value2 from "../public/value2.png"
 import value3 from "../public/value3.png"
 import bg_future from "../public/bg-future.png"
 import future from "../public/future.png"
-import logo_white from "../public/logo_white.png"
-import twitter from "../public/twitter.png"
-import facebook from "../public/facebook.png"
+import { Footer } from '../components/Footer';
 
 
 export default function Home() {
@@ -147,16 +144,16 @@ export default function Home() {
             </h3>
           </SlideInRight>
 
-          <div className="flex flex-col lg:flex-row gap-[30px]">
+          <div className="flex flex-col justify-center items-center lg:flex-row gap-[30px]">
             <SlideInLeft>
-              <div className="mt-[165px] mx-20 lg:mx-0 ">
+              <div className="mt-[165px] grid place-items-center mx-20 lg:mx-0 ">
                 <Image src={skill} objectFit="contain" placeholder="blur" loading="eager" alt="skill" />
               </div>
             </SlideInLeft>
 
-            <div className="m-auto mt-[120px] w-[550px]">
+            <div className="grid place-items-center mt-[120px] w-[90%] lg:w-[550px]">
               <SlideInRight>
-                <p className="m-auto w-[80%] lg:w-full text-[17px] mb-[15px]">
+                <p className="mx-20 lg:mx-0 text-[17px] mb-[15px]">
                   基本情報技術者試験　Python3エンジニア認定基礎試験　C言語:半年 Python:半年 HTML、CSS、
                   JavaScript:２カ月 JavaScript(React、Next.js、Gatsby、Node) Tailwind css
                   ChakraUI Bootstrap TypeScript git Linux<br /><br />
@@ -277,7 +274,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col lg:flex-row justify-center items-center gap-[40px]">
             <SlideInLeft>
-              <div className="mx-10 w-[90%] lg:w-[510px]">
+              <div className="ml-[5%] text-center w-[90%] lg:w-[510px]">
                 <h2 className="mt-[60px] text-[30px] font-bold text-center lg:text-left tracking-widest">
                   3年後にやりたいこと
                   <span className="ml-[20px] text-[20px] text-[#008c8d]">
@@ -305,41 +302,7 @@ export default function Home() {
         </section>
 
       </main>
-
-
-      <footer className="py-[40px] flex flex-col items-center justify-center w-full bg-black text-white">
-        <FadeIn>
-          <h4 className="hidden lg:block text-[14px] tracking-wider font-mono">CREATED BY
-            <span className="ml-[20px] text-[20px] tracking-wide font-black">
-              田中 明雄
-            </span>
-          </h4>
-        </FadeIn>
-
-        <div className="block lg:hidden text-[14px] text-center space-y-6">
-          <FadeIn>
-            <h4>お問い合わせ 　 助成金について</h4>
-          </FadeIn>
-          <FadeIn>
-            <h4>特定商取引法に基づく表記 　 プライバシーポリシー</h4>
-          </FadeIn>
-        </div>
-        <FadeIn>
-          <div className="mb-[90px] h-[100px] scale-[30%]">
-            <Image src={logo_white} objectFit="contain" loading="eager" placeholder="blur" alt="logo_white" />
-          </div>
-        </FadeIn>
-        <FadeIn>
-          <div className="flex gap-[20px] scale-75">
-            <Image className="hover:animate-pulse duration-300" src={twitter} objectFit="contain" loading="eager" placeholder="blur" alt="logo_white" />
-            <Image className="hover:animate-pulse" src={facebook} objectFit="contain" loading="eager" placeholder="blur" alt="logo_white" />
-          </div>
-        </FadeIn>
-        <FadeIn>
-          <h4 className="mt-[25px] text-[14px] font-mono tracking-widest">&copy;2021 KIKAGAKU</h4>
-        </FadeIn>
-      </footer>
-
+      <Footer />
     </div>
   )
 }

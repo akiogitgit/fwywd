@@ -1,3 +1,5 @@
+// aタグが使えなくなるから、使わない
+
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 import { useState } from "react";
 import Image from 'next/image'
