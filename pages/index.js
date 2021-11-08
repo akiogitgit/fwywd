@@ -69,7 +69,7 @@ export default function Home() {
       <main id="top" className="pt-[120px] sm:pt-[80px]">
         <section className="bg-[#6bc2c3] flex flex-col lg:flex-row justify-center items-center lg:justify-between pt-[38px] pb-[27px] px-[60px]">
           <div className="flex items-center text-white">
-            <div className="text-[100px] text-center lg:text-left font-black tracking-widest leading-[65px]">
+            <div className="text-[100px] text-center lg:text-left font-black sm:tracking-widest leading-[65px]">
               <SlideInLeft>
                 <h2 className="text-[30px] lg:text-[50px]">
                   ポートフォリオ
@@ -153,7 +153,7 @@ export default function Home() {
 
             <div className="grid place-items-center mt-[120px]">
               <SlideInRight>
-                <p className="ml-[5%] w-[80%] lg:w-[550px] text-[17px] mb-[15px]">
+                <p className="ml-[10%] lg:ml-0 w-[80%] lg:w-[550px] text-[17px] mb-[15px]">
                   基本情報技術者試験　Python3エンジニア認定基礎試験　C言語:半年 Python:半年 HTML、CSS、
                   JavaScript:２カ月 JavaScript(React、Next.js、Gatsby、Node) Tailwind css
                   ChakraUI Bootstrap TypeScript git Linux<br /><br />
