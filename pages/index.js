@@ -42,12 +42,12 @@ export default function Home() {
         <link rel="icon" href="/logo_white.png" />
       </Head>
 
-      <header className={`fixed top-0 z-10 bg-white bg-opacity-75 w-full flex justify-between duration-300
+      <header className={`fixed top-0 z-10 bg-white bg-opacity-75 w-full flex flex-col sm:flex-row sm:justify-between duration-300
         ${showHeader ? "" : "translate-y-[-100%]"}`}>
-        <a href="#top" className="h-[80px] w-[200px] z-20 scale-[100%]">
+        <a href="#top" className="m-auto sm:m-0 h-[80px] w-[200px] z-20 scale-[70%] sm:scale-[100%]">
           <Image className="translate-y-[-5px]" src={logo} loading="eager" placeholder="blur" alt="logo" />
         </a>
-        <div className="flex gap-[30px] mr-[20px] mt-[30px] text-[18px] font-bold text-[#008c8d]">
+        <div className="flex gap-[30px] justify-center mr-[20px] sm:mt-[30px] pb-[10px] text-[18px] font-bold text-[#008c8d]">
           <a href="#about" className="nub-hover">ABOUT
             <p className="w-0 h-[1px] bg-[#008c8d] duration-300"></p>
           </a>
@@ -69,12 +69,12 @@ export default function Home() {
           `}</style>
       </header>
 
-      <main id="top" className="pt-[80px]">
-        <section className="bg-[#6bc2c3] flex justify-between pt-[38px] pb-[27px] px-[60px]">
-          <div className="flex items-center ml-[70px] text-white">
-            <div className="text-[100px] font-black tracking-widest leading-[65px]">
+      <main id="top" className="pt-[120px] sm:pt-[80px]">
+        <section className="bg-[#6bc2c3] flex flex-col lg:flex-row justify-center items-center lg:justify-between pt-[38px] pb-[27px] px-[60px]">
+          <div className="flex items-center lg:ml-[] text-white">
+            <div className="text-[100px] text-center lg:text-left font-black tracking-widest leading-[65px]">
               <SlideInLeft>
-                <h2 className="text-[50px]">
+                <h2 className="text-[40px] lg:text-[50px]">
                   ポートフォリオ
                 </h2>
               </SlideInLeft>
@@ -92,10 +92,10 @@ export default function Home() {
         {/* <Image className="absolute top-[0px] z-[-1]" height="1000" width="1440" src="/bg-about.png" /> */}
 
 
-        <section id="about" className="relative grid place-items-center">
-          <div className="absolute top-[-30px] z-[-1]">
-            <Image src={bg_about} objectFit="contain" placeholder="blur" loading="eager" />
-          </div>
+        <section id="about" className="relativea pb-[100px] grid place-items-center" style={{ backgroundImage: "url('/bg-about.png')", backgroundSize: "cover", backgroundPosition: "center center" }}>
+          {/* <div className="absolute top-0 xl:top-[-30px] z-[-1] hidden lg:block origin-left lg:scale-x-[200%]">
+            <Image src={bg_about} placeholder="blur" loading="eager" />
+          </div> */}
           <FadeIn>
             <h3 className="pt-[50px] text-[30px] font-black tracking-wider">
               私たちについて
@@ -105,7 +105,7 @@ export default function Home() {
             </h3>
           </FadeIn>
 
-          <div className="flex gap-[60px] py-[40px]">
+          <div className="flex flex-wrap justify-center gap-[40px] lg:gap-[60px] py-[40px]">
             <FadeIn>
               <div className="flex flex-col text-center w-[300px]">
                 <Image src={about_1} objectFit="contain" placeholder="blur" loading="eager" alt="about-1" />
@@ -134,29 +134,29 @@ export default function Home() {
         </section>
 
 
-        <section id="skills" className="relative">
-          <div className="absolute top-[0px] z-[-1]">
+        <section id="skills" className="relative pb-[120px] flex flex-col justify-center items-center translate-y-[-100px]" style={{ backgroundImage: "url('/bg-skills.png')", backgroundSize: "cover" }}>
+          {/* <div className="absolute top-[0px] z-[-1] origin-top scale-[500%] sm:scale-[400%] md:scale-[300%] lg:scale-100 lg:scale-x-[200%] ">
             <Image src={bg_skills} objectFit="contain" placeholder="blur" loading="eager" alt="bg-skill" />
-          </div>
-          <div className="flex justify-center gap-[30px]">
+          </div> */}
+          <SlideInRight>
+            <h3 className="flex flex-col lg:flex-row text-center text-[30px] font-bold tracking-widest translate-y-[100px] lg:translate-y-[80px] lg:translate-x-[80px]">
+              スキル
+              <span className="lg:ml-[20px] text-[#008c8d] text-[20px] tracking-wide ">
+                SKILLS
+              </span>
+            </h3>
+          </SlideInRight>
+
+          <div className="flex flex-col lg:flex-row gap-[30px]">
             <SlideInLeft>
-              <div className="mt-[165px]">
+              <div className="mt-[165px] mx-20 lg:mx-0 ">
                 <Image src={skill} objectFit="contain" placeholder="blur" loading="eager" alt="skill" />
               </div>
             </SlideInLeft>
 
-            <div className="mt-[120px] w-[550px]">
+            <div className="m-auto mt-[120px] w-[550px]">
               <SlideInRight>
-                <h3 className="mb-[15px] text-[30px] font-bold tracking-widest">
-                  スキル
-                  <span className="ml-[20px] text-[#008c8d] text-[20px] tracking-wide ">
-                    SKILLS
-                  </span>
-                </h3>
-              </SlideInRight>
-
-              <SlideInRight>
-                <p className="text-[17px] mb-[15px]">
+                <p className="m-auto w-[80%] lg:w-full text-[17px] mb-[15px]">
                   基本情報技術者試験　Python3エンジニア認定基礎試験　C言語:半年 Python:半年 HTML、CSS、
                   JavaScript:２カ月 JavaScript(React、Next.js、Gatsby、Node) Tailwind css
                   ChakraUI Bootstrap TypeScript git Linux<br /><br />
@@ -165,40 +165,42 @@ export default function Home() {
               </SlideInRight>
 
               <SlideInRight>
-                <div className="flex flex-col gap-[30px] w-[550px] h-[290px] bg-white p-[20px] text-[#008c8d] text-[20px]">
-                  <div>
-                    <h4>
-                      フロント
-                    </h4>
-                    <div className="flex">
-                      <div className="relative w-[400px] h-[20px] bg-[#c5eaea] rounded-xl">
-                        <div className="absolute top-0 left-0 w-[360px] h-[20px] bg-[#2bb9ba] rounded-l-xl"></div>
+                <div className="grid place-items-center w-[500px] h-[290px]">
+                  <div className="flex flex-col justify-center gap-[30px] ml-[10px] lg:ml-0 scale-[80%] lg:scale-100 bg-white p-[20px] text-[#008c8d] text-[20px]">
+                    <div>
+                      <h4>
+                        フロント
+                      </h4>
+                      <div className="flex">
+                        <div className="relative w-[400px] h-[20px] bg-[#c5eaea] rounded-xl">
+                          <div className="absolute top-0 left-0 w-[360px] h-[20px] bg-[#2bb9ba] rounded-l-xl"></div>
+                        </div>
+                        <h4 className="ml-[20px] translate-y-[-5px]">90%</h4>
                       </div>
-                      <h4 className="ml-[20px] translate-y-[-5px]">90%</h4>
                     </div>
-                  </div>
 
-                  <div>
-                    <h4>
-                      サーバー
-                    </h4>
-                    <div className="flex">
-                      <div className="relative w-[400px] h-[20px] bg-[#c5eaea] rounded-xl">
-                        <div className="absolute top-0 left-0 w-[30px] h-[20px] bg-[#2bb9ba] rounded-l-xl"></div>
+                    <div>
+                      <h4>
+                        サーバー
+                      </h4>
+                      <div className="flex">
+                        <div className="relative w-[400px] h-[20px] bg-[#c5eaea] rounded-xl">
+                          <div className="absolute top-0 left-0 w-[30px] h-[20px] bg-[#2bb9ba] rounded-l-xl"></div>
+                        </div>
+                        <h4 className="ml-[20px] translate-y-[-5px]">10%</h4>
                       </div>
-                      <h4 className="ml-[20px] translate-y-[-5px]">10%</h4>
                     </div>
-                  </div>
 
-                  <div>
-                    <h4>
-                      データベース
-                    </h4>
-                    <div className="flex">
-                      <div className="relative w-[400px] h-[20px] bg-[#c5eaea] rounded-xl">
-                        <div className="absolute top-0 left-0 w-[8px] h-[20px] bg-[#2bb9ba] rounded-l-xl"></div>
+                    <div>
+                      <h4>
+                        データベース
+                      </h4>
+                      <div className="flex">
+                        <div className="relative w-[400px] h-[20px] bg-[#c5eaea] rounded-xl">
+                          <div className="absolute top-0 left-0 w-[8px] h-[20px] bg-[#2bb9ba] rounded-l-xl"></div>
+                        </div>
+                        <h4 className="ml-[20px] translate-y-[-5px]">2%</h4>
                       </div>
-                      <h4 className="ml-[20px] translate-y-[-5px]">2%</h4>
                     </div>
                   </div>
                 </div>
@@ -208,17 +210,19 @@ export default function Home() {
         </section>
 
 
-        <FadeIn>
-          <section id="values" className="mt-[150px] grid place-items-center">
-            <h2 className="text-[30px] font-bold tracking-widest">
+        <section id="values" className="mt-[150px] grid place-items-center">
+          <FadeIn>
+            <h2 className="flex flex-col lg:flex-row text-center text-[30px] font-bold tracking-widest">
               価値観
-              <span className="ml-[20px] text-[20px] text-[#008c8d] tracking-wider">
+              <span className="lg:ml-[20px] text-[20px] text-[#008c8d] tracking-wider">
                 VALUES
               </span>
             </h2>
-            <div className="mt-[40px] flex text-center bg-white rounded-xl">
+          </FadeIn>
+          <div className="mt-[40px] flex flex-col lg:flex-row text-center bg-white rounded-xl">
+            <FadeIn>
               <div className="my-[30px]">
-                <div className="flex flex-col w-[350px] border-r-2 border-[#c5eaea]">
+                <div className="flex flex-col w-[350px] lg:border-r-2 border-[#c5eaea]">
                   <Image src={value1} objectFit="contain" placeholder="blur" loading="eager" alt="value1" />
                   <h3 className="text-[18px] font-bold mt-[30px] mb-[15px]">
                     価値観01
@@ -226,13 +230,15 @@ export default function Home() {
                   <p className="mx-[40px]">
                     お金について。今は学生なので、大人になった時との価値観が異なると思います。
                     また、時間の価値も異なり、大人になると自分の時間が取れなくなると思います。
-                    学生の時に稼いだお金は、学生のうちにある程度使いたいと思っています。
+                    なので、学生の時に稼いだお金は、学生のうちにある程度使いたいと思っています。
                   </p>
                 </div>
               </div>
+            </FadeIn>
 
+            <FadeIn>
               <div className="my-[30px]">
-                <div className="flex flex-col w-[350px] border-r-2 border-[#c5eaea]">
+                <div className="flex flex-col w-[350px] lg:border-r-2 border-[#c5eaea]">
                   <Image src={value2} objectFit="contain" placeholder="blur" loading="eager" alt="value2" />
                   <h3 className="text-[18px] font-bold mt-[30px] mb-[15px]">
                     価値観02
@@ -244,7 +250,9 @@ export default function Home() {
                   </p>
                 </div>
               </div>
+            </FadeIn>
 
+            <FadeIn>
               <div className="my-[30px]">
                 <div className="flex flex-col w-[350px]">
                   <Image src={value3} objectFit="contain" placeholder="blur" loading="eager" alt="value3" />
@@ -258,19 +266,19 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-            </div>
-          </section>
-        </FadeIn>
+            </FadeIn>
+          </div>
+        </section>
 
 
         <section id="future" className="relative pb-[50px]">
-          <div className="absolute top-[-290px] z-[-1]">
+          <div className="absolute top-[-290px] z-[-1] origin-top scale-[500%] lg:scale-[200%]">
             <Image src={bg_future} objectFit="contain" loading="eager" placeholder="blur" alt="future" />
           </div>
-          <div className="flex justify-center gap-[40px]">
+          <div className="flex flex-col lg:flex-row justify-center items-center gap-[40px]">
             <SlideInLeft>
-              <div className="w-[510px]">
-                <h2 className="mt-[60px] text-[30px] font-bold tracking-widest">
+              <div className="mx-10 w-[90%] lg:w-[510px]">
+                <h2 className="mt-[60px] text-[30px] font-bold text-center lg:text-left tracking-widest">
                   3年後にやりたいこと
                   <span className="ml-[20px] text-[20px] text-[#008c8d]">
                     FUTURE
@@ -289,7 +297,7 @@ export default function Home() {
               </div>
             </SlideInLeft>
             <SlideInRight>
-              <div className="mt-[70px]">
+              <div className="lg:mt-[70px]">
                 <Image src={future} objectFit="contain" loading="eager" placeholder="blur" alt="future" />
               </div>
             </SlideInRight>
@@ -301,19 +309,28 @@ export default function Home() {
 
       <footer className="py-[40px] flex flex-col items-center justify-center w-full bg-black text-white">
         <FadeIn>
-          <h4 className="text-[14px] tracking-wider font-mono">CREATED BY
+          <h4 className="hidden lg:block text-[14px] tracking-wider font-mono">CREATED BY
             <span className="ml-[20px] text-[20px] tracking-wide font-black">
               田中 明雄
             </span>
           </h4>
         </FadeIn>
+
+        <div className="block lg:hidden text-[14px] text-center space-y-6">
+          <FadeIn>
+            <h4>お問い合わせ 　 助成金について</h4>
+          </FadeIn>
+          <FadeIn>
+            <h4>特定商取引法に基づく表記 　 プライバシーポリシー</h4>
+          </FadeIn>
+        </div>
         <FadeIn>
-          <div className="h-[300px] scale-[30%]">
+          <div className="mb-[90px] h-[100px] scale-[30%]">
             <Image src={logo_white} objectFit="contain" loading="eager" placeholder="blur" alt="logo_white" />
           </div>
         </FadeIn>
         <FadeIn>
-          <div className="flex gap-[20px]">
+          <div className="flex gap-[20px] scale-75">
             <Image className="hover:animate-pulse duration-300" src={twitter} objectFit="contain" loading="eager" placeholder="blur" alt="logo_white" />
             <Image className="hover:animate-pulse" src={facebook} objectFit="contain" loading="eager" placeholder="blur" alt="logo_white" />
           </div>
