@@ -44,7 +44,7 @@ export default function Home() {
         <a href="#top" className="m-auto sm:m-0 h-[80px] w-[200px] z-20 scale-[70%] sm:scale-[100%]">
           <Image className="translate-y-[-5px]" src={logo} loading="eager" placeholder="blur" alt="logo" />
         </a>
-        <div className="flex gap-[30px] justify-center mr-[20px] sm:mt-[30px] pb-[10px] text-[18px] font-bold text-[#008c8d]">
+        <div className="flex gap-[30px] justify-center mr-[20px] sm:mt-[30px] pb-[10px] text-[15px] sm:text-[18px] font-bold text-[#008c8d]">
           <a href="#about" className="nub-hover">ABOUT
             <p className="w-0 h-[1px] bg-[#008c8d] duration-300"></p>
           </a>
@@ -68,15 +68,15 @@ export default function Home() {
 
       <main id="top" className="pt-[120px] sm:pt-[80px]">
         <section className="bg-[#6bc2c3] flex flex-col lg:flex-row justify-center items-center lg:justify-between pt-[38px] pb-[27px] px-[60px]">
-          <div className="flex items-center lg:ml-[] text-white">
+          <div className="flex items-center text-white">
             <div className="text-[100px] text-center lg:text-left font-black tracking-widest leading-[65px]">
               <SlideInLeft>
-                <h2 className="text-[40px] lg:text-[50px]">
+                <h2 className="text-[30px] lg:text-[50px]">
                   ポートフォリオ
                 </h2>
               </SlideInLeft>
               <FadeInHigh>
-                <h4 className="text-[30px] text-[#c5eaea] tracking-wider">
+                <h4 className="text-[25px] sm:text-[30px] text-[#c5eaea] tracking-wider">
                   fwywd 一次試験
                 </h4>
               </FadeInHigh>
@@ -94,9 +94,9 @@ export default function Home() {
             <Image src={bg_about} placeholder="blur" loading="eager" />
           </div> */}
           <FadeIn>
-            <h3 className="pt-[50px] text-[30px] font-black tracking-wider">
+            <h3 className="flex flex-col lg:flex-row text-center pt-[50px] text-[30px] font-black tracking-wider">
               私たちについて
-              <span className="ml-[20px] text-[#008c8d] text-[20px]">
+              <span className="lg:ml-[20px] text-[#008c8d] text-[20px]">
                 ABOUT
               </span>
             </h3>
@@ -151,9 +151,9 @@ export default function Home() {
               </div>
             </SlideInLeft>
 
-            <div className="grid place-items-center mt-[120px] w-[90%] lg:w-[550px]">
+            <div className="grid place-items-center mt-[120px]">
               <SlideInRight>
-                <p className="mx-20 lg:mx-0 text-[17px] mb-[15px]">
+                <p className="ml-[5%] w-[80%] lg:w-[550px] text-[17px] mb-[15px]">
                   基本情報技術者試験　Python3エンジニア認定基礎試験　C言語:半年 Python:半年 HTML、CSS、
                   JavaScript:２カ月 JavaScript(React、Next.js、Gatsby、Node) Tailwind css
                   ChakraUI Bootstrap TypeScript git Linux<br /><br />
@@ -162,15 +162,15 @@ export default function Home() {
               </SlideInRight>
 
               <SlideInRight>
-                <div className="grid place-items-center w-[500px] h-[290px]">
-                  <div className="flex flex-col justify-center gap-[30px] ml-[10px] lg:ml-0 scale-[80%] lg:scale-100 bg-white p-[20px] text-[#008c8d] text-[20px]">
+                <div className="w-[320px] sm:w-[500px] h-[290px]">
+                  <div className="flex flex-col justify-center gap-[30px] ml-[0px] lg:ml-0 scale-[80%] lg:scale-100 bg-white p-[20px] text-[#008c8d] text-[20px]">
                     <div>
                       <h4>
                         フロント
                       </h4>
                       <div className="flex">
-                        <div className="relative w-[400px] h-[20px] bg-[#c5eaea] rounded-xl">
-                          <div className="absolute top-0 left-0 w-[360px] h-[20px] bg-[#2bb9ba] rounded-l-xl"></div>
+                        <div className="relative w-[300px] sm:w-[400px] h-[20px] bg-[#c5eaea] rounded-xl">
+                          <div className="absolute top-0 left-0 w-[200px] sm:w-[360px] h-[20px] bg-[#2bb9ba] rounded-l-xl"></div>
                         </div>
                         <h4 className="ml-[20px] translate-y-[-5px]">90%</h4>
                       </div>
@@ -181,7 +181,7 @@ export default function Home() {
                         サーバー
                       </h4>
                       <div className="flex">
-                        <div className="relative w-[400px] h-[20px] bg-[#c5eaea] rounded-xl">
+                        <div className="relative w-[300px] sm:w-[400px] h-[20px] bg-[#c5eaea] rounded-xl">
                           <div className="absolute top-0 left-0 w-[30px] h-[20px] bg-[#2bb9ba] rounded-l-xl"></div>
                         </div>
                         <h4 className="ml-[20px] translate-y-[-5px]">10%</h4>
@@ -193,7 +193,7 @@ export default function Home() {
                         データベース
                       </h4>
                       <div className="flex">
-                        <div className="relative w-[400px] h-[20px] bg-[#c5eaea] rounded-xl">
+                        <div className="relative w-[300px] sm:w-[400px] h-[20px] bg-[#c5eaea] rounded-xl">
                           <div className="absolute top-0 left-0 w-[8px] h-[20px] bg-[#2bb9ba] rounded-l-xl"></div>
                         </div>
                         <h4 className="ml-[20px] translate-y-[-5px]">2%</h4>
@@ -276,7 +276,7 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row justify-center items-center gap-[40px]">
             <SlideInLeft>
               <div className="ml-[5%] text-center w-[90%] lg:w-[510px]">
-                <h2 className="mt-[60px] text-[30px] font-bold text-center lg:text-left tracking-widest">
+                <h2 className="mt-[60px] text-[25px] sm:text-[30px] font-bold text-center lg:text-left tracking-widest">
                   3年後にやりたいこと
                   <span className="ml-[20px] text-[20px] text-[#008c8d]">
                     FUTURE
