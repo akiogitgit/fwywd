@@ -275,7 +275,7 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row justify-center items-center gap-[40px]">
             <SlideInLeft>
               <div className="ml-[5%] text-center w-[90%] lg:w-[510px]">
-                <h2 className="flex flex-col sm:flex-row mt-[60px] text-[25px] sm:text-[30px] font-bold text-center lg:text-left tracking-widest">
+                <h2 className="flex flex-col sm:flex-wrap text-center mt-[60px] text-[25px] sm:text-[30px] font-bold text-center lg:text-left tracking-widest">
                   3年後にやりたいこと
                   <span className="sm:ml-[20px] text-[20px] text-[#008c8d]">
                     FUTURE
